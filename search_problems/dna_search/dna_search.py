@@ -20,3 +20,5 @@ def string_to_gene(s: str) -> Gene:
         codon: Codon = (Nucleotide[s[i]], Nucleotide[s[i + 1]], Nucleotide[s[i + 2]])
         gene.append(codon) # add codon to gene
     return gene
+
+my_gene: Gene = string_to_gene(gene_str)
